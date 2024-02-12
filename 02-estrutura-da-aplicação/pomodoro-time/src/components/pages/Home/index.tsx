@@ -4,7 +4,7 @@ import { HandPalm, Play } from 'phosphor-react'
 import * as zod from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import {
-  HomoContainer,
+  HomeContainer,
   StartCountDownButton,
   StopCountDownButton,
 } from './styles'
@@ -49,7 +49,7 @@ export function Home() {
   const isSubmitDisable = !task
 
   return (
-    <HomoContainer>
+    <HomeContainer>
       <form onSubmit={handleSubmit(handleCreateNewCycle)} action="">
         <FormProvider {...newCycleForm}>
           <NewCycleForm />
@@ -68,6 +68,6 @@ export function Home() {
           </StartCountDownButton>
         )}
       </form>
-    </HomoContainer>
+    </HomeContainer>
   )
 }

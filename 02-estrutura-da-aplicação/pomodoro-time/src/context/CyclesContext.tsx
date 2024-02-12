@@ -6,6 +6,7 @@ import {
   markCurrentCycleAsFinishedAction,
 } from '../reducers/cycles/actions'
 import { differenceInSeconds } from 'date-fns'
+
 interface createCycleData {
   task: string
   minutesAmount: number
